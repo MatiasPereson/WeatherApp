@@ -1,0 +1,10 @@
+#logoHenry {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+nav{
+  /* backdrop-filter: blur(20px); */
+  background: rgba(255, 255, 255, 0.64);
+}
