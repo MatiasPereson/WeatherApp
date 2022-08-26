@@ -1,8 +1,8 @@
 body {
-    /* background-image: url(../../homework/src/components/img/puente1.png);
+    background-image: url(../../homework/src/components/img/puente1.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-size: cover; */
-    background: rgba(0, 0, 0, 0.797);
+    background-size: cover;
+    /* background: rgba(0, 0, 0, 0.797); */
 }
