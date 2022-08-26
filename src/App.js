@@ -12,7 +12,7 @@ export default function App() {
 
   //busqueda
   function onSearch(search) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${apiKey}&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${apiKey}&units=metric`)
       .then(r => r.json())
       .then((recurso) => {
         console.log(recurso)
@@ -50,7 +50,7 @@ export default function App() {
 
   //Ciudades por default
   function defaultCities(search) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${apiKey}&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${apiKey}&units=metric`)
       .then(r => r.json())
       .then((recurso) => {
         console.log(recurso)
@@ -84,8 +84,8 @@ export default function App() {
 
   return (
     <div className="App">
-        <Nav onSearch={onSearch} />
-        <Cards cities={cities} onClose={onClose} />
+      <Nav onSearch={onSearch} />
+      <Cards cities={cities} onClose={onClose} />
     </div>
   );
 }
